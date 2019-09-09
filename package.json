@@ -1,4 +1,5 @@
 {
+  "URL": "https://aaren-ecom-site.herokuapp.com",
   "name": "ecom-site",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "create-heroku": "heroku create aaren-ecom-site --buildpack https://github.com/mars/create-react-app-buildpack.git",
+    "deploy-heroku": "git push heroku master"
   },
   "eslintConfig": {
     "extends": "react-app"
