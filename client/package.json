@@ -4,6 +4,14 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "create-heroku": "heroku create aaren-ecom-site --buildpack https://github.com/mars/create-react-app-buildpack.git",
+    "deploy-heroku": "git push heroku master"
+  },
   "dependencies": {
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.4.0",
@@ -23,14 +31,6 @@
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "styled-components": "^4.3.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "create-heroku": "heroku create aaren-ecom-site --buildpack https://github.com/mars/create-react-app-buildpack.git",
-    "deploy-heroku": "git push heroku master"
   },
   "eslintConfig": {
     "extends": "react-app"
